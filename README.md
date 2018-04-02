@@ -1,2 +1,3 @@
-# personal-site
-My first website.
+# My Portfolio
+
+This is a static site showcasing my skills and favorite projects. 
