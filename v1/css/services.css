@@ -1,0 +1,33 @@
+.service {
+	height: 250px;
+	margin: 50px 50px 25px 50px;
+	width: calc(100% -60px);
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 3px 3px 5px #888888;
+}
+.serviceDescription {
+	float:left;
+	width: 50%;
+	height: 250px;
+	padding: 0 100px;
+	margin: 0px;
+	font-size: 2.5vw;
+	line-height: 250px;
+	box-sizing: border-box;
+	overflow: auto;
+	color: rgba(225, 225, 225, 0.9);
+	background-color: rgb(70, 70, 70);
+	text-align: center;
+}
+.servicePic {
+	float:left;
+    width: 50%;
+    box-sizing: border-box;
+}
+#centerTest {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	line-height: 1.25;
+}

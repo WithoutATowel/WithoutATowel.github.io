@@ -1,0 +1,35 @@
+#gallery {
+	max-width: 1330px;
+	margin: 30px auto 0 auto;
+	text-align: center;
+}
+.galleryItem {
+    position: relative;
+    margin: 0 30px 25px 30px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #777;
+    background-color: gray;
+}
+.galleryItem:hover .desc{
+	font-weight: bold;
+}
+.galleryItem:hover img{
+	opacity: 1;
+}
+.galleryItem img {
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+}
+.desc {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+}

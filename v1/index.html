@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brett Spencer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Brett Spencer">
+	<meta name="description" content="This will be the homepage for my personal website.">
+	<meta name="keywords" content="brett spencer, programmer, developer, programmer brett, developer brett, personal website">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+	<script src="js/main.js" defer></script>
+</head>
+<body>
+	<nav>
+		<ul class="navMenu"> <!-- Switch nav system to hamburger drop-down for mobile? -->
+			<li class="navItem"><a class="navItem activeNav" href="index.html">Home</a></li>
+			<li class="navItem"><a class="navItem" href="services.html">Services</a></li>
+			<li class="navItem"><a class="navItem" href="portfolio.html">Portfolio</a></li>
+			<li class="navItem"><a class="navItem" href="contact.html">Contact</a></li>
+		</ul>
+		<form id="searchBox" action="wip.html">
+			<input type="search" placeholder="Search" id="searchText" name="search">
+			<i class="fa fa-search" id="searchButton"></i>
+		</form>
+	</nav>
+	<main class="clearFix">
+		<h1 id="ohHello">Hi, I'm Brett Spencer.</h1>
+		<div id="mainText"> <!-- I should wrap the p and img elements in divs, give the divs max-heights based on viewport size, and give p overflow:auto for a scrollbar, whereas the img will just have overflow:hidden -->
+			<p id="intro">
+				<span id="centerTest">
+				This is my first website. It was designed to showcase my technical skills, and was built using HTML, CSS, jQuery, and GIMP. v1 is checked in on GitHub and will soon be hosted.
+				</span>
+			</p>
+			<img id="profilePic" src="img/brett.jpg">
+		</div>
+		<div id="personalStatement">
+			<h2>Personal Statement</h2>
+			<p>My interest in computer science dates back to my years in high school, where I excelled in physics, chemistry, and math. When I was a senior, I took a first-year calculus course at a local college (such an advanced-level class was not available in high school) and earned an A. It seemed only logical that I pursue a career in electrical engineering.
+			<br><br>
+			When I began my undergraduate career, I had the opportunity to be exposed to the full range of engineering courses, all of which tended to reinforce and solidify my intense interest in engineering. I've also had the opportunity to study a number of subjects in the humanities and they have been both enjoyable and enlightening, providing me with a new and different perspective on the world in which we live.			
+			<br><br>
+			In the realm of engineering, I have developed a special interest in the field of laser technology and have even been taking a graduate course in quantum electronics. Among the 25 or so students in the course, I am the sole undergraduate. Another particular interest of mine is electromagnetics, and last summer, when I was a technical assistant at a world-famous local lab, I learned about its many practical applications, especially in relation to microstrip and antenna design. Management at this lab was sufficiently impressed with my work to ask that I return when I graduate. Of course, my plans following completion of my current studies are to move directly into graduate work toward my master's in science. After I earn my master's degree, I intend to start work on my Ph.D. in electrical engineering. Later I would like to work in the area of research and development for private industry. It is in research and development that I believe I can make the greatest contribution, utilizing my theoretical background and creativity as a scientist.			
+			<br><br>
+			I am highly aware of the superb reputation of your school, and my conversations with several of your alumni have served to deepen my interest in attending. I know that, in addition to your excellent faculty, your computer facilities are among the best in the state. I hope you will give me the privilege of continuing my studies at your fine institution.
+		</div>
+	</main>
+	<footer>
+		<div>
+			<a class="footerNav" href="index.html">Home</a> |
+			<a class="footerNav" href="services.html">Services</a> |
+			<a class="footerNav" href="portfolio.html">Portfolio</a> |
+			<a class="footerNav" href="contact.html">Contact</a>
+		</div>
+	</footer>
+</body>
+</html>

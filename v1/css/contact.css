@@ -1,0 +1,56 @@
+#contactContainer {
+	background-color: white;
+	margin: 50px 50px 25px 50px;
+	box-shadow: 3px 3px 5px #888888;
+}
+#contactForm {
+	float: left;
+	padding: 75px;
+	width: 49.5%;
+	box-sizing: border-box;
+}
+#contactMessage {
+	float: left;
+	padding: 75px;
+	width: 49.5%;
+	box-sizing: border-box;
+	text-align: center;
+}
+h1 {
+	margin: 0 0 20px 0;
+}
+form[name="contactMe"] input,
+textarea {
+	outline: none;
+	width: 400px;
+	padding: 0;
+}
+form[name="contactMe"] input {
+	margin-top: 5px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 20px;
+}
+textarea {
+	height: 100px;
+}
+input[type="submit"] {
+	border: none;
+	background-color: rgb(97, 97, 97);
+	border-radius: 0;
+	color: white;
+	height: 35px;
+	width: 402px;
+	padding: 0;
+}
+hr {
+	float: left;
+	width: 0px;
+	height: 425px;
+	border: solid 1% rgb(97, 97, 97);
+	margin: 75px 0.25%;
+}
+#contactMessage img {
+	height: 250px;
+}

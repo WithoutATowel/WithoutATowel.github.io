@@ -1,0 +1,57 @@
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+#ohHello {
+	font-size: 6vw;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	letter-spacing: 3px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	padding: 50px 0px;
+	margin: 0;
+	box-sizing: border-box;
+}
+#mainText {
+	height: 450px;
+	margin: 0px 30px;
+	width: calc(100% -60px);
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow: 3px 3px 5px #888888;
+}
+#intro {
+	float:left;
+	width: 50%;
+	height: 450px;
+	padding: 0 100px;
+	margin: 0px;
+	background-color: #6D7993;
+	font-size: 2.5vw;
+	line-height: 450px;
+	box-sizing: border-box;
+	overflow: auto;
+	color: rgb(50, 50, 50);
+}
+#centerTest {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+	line-height: 1.25;
+}
+#profilePic {
+	float:left;
+    width: 50%;
+    box-sizing: border-box;
+}
+#personalStatement {
+	padding: 50px;
+	margin: 35px 30px 25px 30px;
+	width: calc(100% -60px);
+	background-color: rgb(250,250,250);
+	color: rgb(50, 50, 50);
+	line-height: 1.25;
+	box-shadow: 3px 3px 5px #888888;
+}

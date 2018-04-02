@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brett Spener</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Brett Spencer">
+	<meta name="description" content="This will be the homepage for my personal website.">
+	<meta name="keywords" content="brett spencer, programmer, developer, programmer brett, developer brett, personal website">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/services.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<nav>
+		<ul class="navMenu"> <!-- Switch nav system to hamburger drop-down for mobile? -->
+			<li class="navItem"><a class="navItem" href="index.html">Home</a></li>
+			<li class="navItem"><a class="navItem activeNav" href="services.html">Services</a></li>
+			<li class="navItem"><a class="navItem" href="portfolio.html">Portfolio</a></li>
+			<li class="navItem"><a class="navItem" href="contact.html">Contact</a></li>
+		</ul>
+		<form id="searchBox" action="wip.html">
+			<input type="search" placeholder="Search" id="searchText" name="search">
+			<i class="fa fa-search" id="searchButton"></i>
+		</form>
+	</nav>
+	<main class="clearFix">
+		<a href="contact.html?regarding=short-term-employment">
+			<div class="service" id="websites">
+				<p class="serviceDescription">
+					<span id="centerTest">
+						Personal Website Design &#38 Implementation
+					</span>
+				</p>
+				<img class="servicePic" src="img/building_a_website.jpg">
+			</div>
+		</a>
+		<a href="contact.html?regarding=long-term-employment">
+			<div class="service" id="webApps">
+				<p class="serviceDescription">
+					<span id="centerTest">
+						Web Application Development
+					</span>
+				</p>
+				<img class="servicePic" src="img/building_a_webapp.jpg">
+			</div>
+		</a>
+		<a href="contact.html?regarding=short-term-employment">
+			<div class="service" id="techConsulting">
+				<p class="serviceDescription">
+					<span id="centerTest">
+						Technical Consulting
+					</span>
+				</p>
+				<img class="servicePic" src="img/consulting.jpg">
+			</div>
+		</a>
+	</main>
+	<footer>
+		<div>
+			<a class="footerNav" href="index.html">Home</a> |
+			<a class="footerNav" href="services.html">Services</a> |
+			<a class="footerNav" href="portfolio.html">Portfolio</a> |
+			<a class="footerNav" href="contact.html">Contact</a>
+		</div>
+	</footer>
+</body>
+</html>

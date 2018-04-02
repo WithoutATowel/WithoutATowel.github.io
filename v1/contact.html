@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brett Spencer</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Brett Spencer">
+	<meta name="description" content="This will be the homepage for my personal website.">
+	<meta name="keywords" content="brett spencer, programmer, developer, programmer brett, developer brett, personal website">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+	<script src="js/main.js" defer></script>
+	<script src="js/contact.js" defer></script>
+</head>
+<body>
+	<nav>
+		<ul class="navMenu"> <!-- Switch nav system to hamburger drop-down for mobile? -->
+			<li class="navItem"><a class="navItem" href="index.html">Home</a></li>
+			<li class="navItem"><a class="navItem" href="services.html">Services</a></li>
+			<li class="navItem"><a class="navItem" href="portfolio.html">Portfolio</a></li>
+			<li class="navItem"><a class="navItem activeNav" href="contact.html">Contact</a></li>
+		</ul>
+		<form id="searchBox" action="wip.html">
+			<input type="search" placeholder="Search" id="searchText" name="search">
+			<i class="fa fa-search" id="searchButton"></i>
+		</form>
+	</nav>
+	<main class="clearFix">
+		<div id="contactContainer" class="clearFix">
+			<div id="contactForm">
+				<h1>Contact Me</h1>
+				<form name="contactMe" action="wip.html">
+					<span class="formLabel">Name:</span></br>
+					<input type="text" name="name"></br></br>
+					<span class="formLabel">Email:<span class="formLabel"></br>
+					<input type="email" name="email"></br></br>
+					<span class="formLabel">Regarding:</span></br>
+					<input list="options" name="Regarding">
+					<datalist id="options">
+						<option value="Employment: long term"></option>
+						<option value="Employment: short term"></option>
+						<option value="Collaborating on a project"></option>
+						<option value="Just to say hello"></option>
+					</datalist></br></br>
+					<span class="formLabel">Message:</span></br>
+					<textarea name="Message"></textarea></br></br>
+					<input type="submit" name="">
+				</form>
+			</div> <!-- end of contactForm -->
+			<hr>
+			<div id="contactMessage">
+				<h2>Thanks for reaching out!</h2>
+				<p>If your message is business-related, you can expect to hear back from me within two to three days.</p>
+				<p>For more casual stuff, it may take a little longer!</p>
+				<img src="img/logo.png">
+			</div>
+		</div> <!-- end of contactContainer -->
+	</main>
+	<footer>
+		<div>
+			<a class="footerNav" href="index.html">Home</a> |
+			<a class="footerNav" href="services.html">Services</a> |
+			<a class="footerNav" href="portfolio.html">Portfolio</a> |
+			<a class="footerNav" href="contact.html">Contact</a>
+		</div>
+	</footer>
+</body>
+</html>

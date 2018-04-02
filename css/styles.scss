@@ -1,0 +1,255 @@
+$colorOne: rgba(170, 238, 255, 1); // blue lagoon, top of gradient
+$colorTwo: rgba(238, 221, 170, 1); // pale gold, bottom of gradient
+$colorThree: rgba(204, 238, 221, 1); // green blue, mid gradient
+$colorFour: rgba(176, 180, 192, 1); // purple cloud, buttons?
+$colorFourTransparent: rgba(176, 180, 192, 0.95);
+$colorFive: rgba(217, 178, 176,1); // pink cloud, buttons? 
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: white;
+    
+    .navItem {
+        color: $colorFour;
+        font-family: "Quicksand";
+        text-transform: uppercase;
+        font-size: 20px !important;
+        padding: 0 25px !important;
+        font-weight: 400;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: "Quicksand";
+}
+
+hr {
+    width: 50%;
+    color: $colorFour;
+    border: 2px solid $colorFour;
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: $colorFour;
+    font-family: "Quicksand";
+    padding: 2% 0;
+
+    .footer-icons {
+        display: inline-block;
+        background-color: $colorOne;
+        border-radius: 90px;
+        height: 75px;
+        width: 75px;
+        font-size: 3em;
+        position: relative;
+        
+        svg {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        svg:hover {
+            color: $colorFour;
+        }
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.m-right-15 {
+    margin-right: 15px;
+}
+
+.sticky {
+    background: $colorFourTransparent;
+    transition: all .5s ease;
+    -webkit-transition-delay: .25s; /* Safari */
+    transition-delay: .25s;
+
+    a {
+        color: white;
+    }
+}
+
+.row {
+    margin: 0;
+}
+
+.section {
+    padding: 3%;
+}
+
+.section-header {
+    margin-bottom: 40px;
+}
+
+#hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    text-align: center;
+    background: transparent;// linear-gradient($colorOne, $colorTwo);
+    color: white;
+
+    h1 {
+        font-size: 10em;
+    }
+}
+
+#about {
+    text-align: center;
+
+    h2 {
+        margin: 0;
+    }
+
+    img {
+        border-radius: 5px;
+        border: 4px solid $colorFour;
+        padding: 4px;
+    }
+
+    p {
+        display: inline-block;
+        width: 50%;
+        float: right;
+        font-size: 1.75em;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+}
+
+#skills {
+    background: url('../img/cloud-background.jpg');
+    background-size: cover;
+    background-position: center;
+
+    img {
+        display: inline;
+        float: left;
+        width: 50%;
+    }
+}
+
+#projects {
+    width: 85%;
+
+    img {
+        width: 100%;
+        border: 5px solid $colorFour;
+        padding: 5px;
+        border-radius: 1px;
+    }
+
+    .project {
+        margin: 1.5% 0;
+    }
+
+    .project-description {
+        display: inline-block;
+    }
+
+}
+
+#resume {
+    background: url('../img/stars.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: none;
+        border: 1px solide white;
+        font-size: 35px;
+        font-family: "Quicksand";
+        text-transform: uppercase;
+        padding: 0.5% 3%;
+    }
+
+    button:hover {
+        background: white;
+        color: #131862;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+#contact {
+    background: white;
+
+    p {
+        font-size: 1em;
+        color: black;
+    }
+
+    p:hover {
+        color: $colorFour;
+    }
+
+    svg {
+        margin-right: 10px;
+        font-size: 2em;
+    }
+
+    button {
+        background: white;
+        border: 1px solid black;
+        font-size: 1.5em;
+        font-family: "Quicksand";
+        text-transform: uppercase;
+        padding: 0.5% 5%;
+        margin-top: 1%;
+    }
+
+    .input-field input:focus, .input-field textarea:focus {
+        background-color: rgba(238, 221, 170, 0.1);
+        color: black;
+        padding-left: 10px;
+        border-bottom: 1px solid $colorFour;
+    }
+
+    .input-field label {
+        padding-left: 10px;
+    }
+
+    .input-field input[type=text]:focus + label, 
+    .input-field input[type=email]:focus + label,
+    .input-field textarea:focus + label {
+        color: #9e9e9e;
+    }
+
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field textarea:focus {
+        border-bottom: 1px solid #9e9e9e;
+        box-shadow: 0 1px 0 0 #9e9e9e;
+    }
+
+    button:hover {
+        background: black;
+        color: white;
+    }
+}

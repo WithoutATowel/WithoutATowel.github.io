@@ -1,0 +1,19 @@
+main {
+	margin-top: 0;
+	overflow: auto;
+}
+#contactContainer {
+	background-color: white;
+	margin: 50px 50px 25px 50px;
+	box-shadow: 3px 3px 5px #888888;
+}
+#contactMessage {
+	float: left;
+	padding: 75px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+#contactMessage img {
+	height: 250px;
+}
