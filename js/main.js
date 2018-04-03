@@ -8,7 +8,15 @@ $(document).ready(function() {
     	}
     });
 
+    // Initialize Materialize stuff
     M.updateTextFields();
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 64
+    });
+    $('.sidenav').sidenav();
+    // Close sidenav when a menu item is clicked
+    $('.mobile-nav-item').click(() => {
+        $('.sidenav').sidenav('close');
+    });
 
-    $('nav a').smoothScroll()
 });

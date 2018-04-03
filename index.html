@@ -8,54 +8,62 @@
 	<meta name="description" content="This will be the homepage for my personal website.">
 	<meta name="keywords" content="brett spencer, programmer, developer, programmer brett, developer brett, personal website">
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand|Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<div class="navbar-fixed">
 		<nav class="z-depth-1">
-			<div>
-				<ul class="navMenu right"> <!-- Switch nav system to hamburger drop-down for mobile? -->
+			<div class="nav-wrapper">
+				<a href="#" data-target="mobile-nav" class="sidenav-trigger hide-on-large-only" id="hamburger"><i class="material-icons">menu</i></a>
+				<ul class="navMenu right hide-on-med-and-down">
 					<li><a class="navItem activeNav" href="#about">About</a></li>
 					<li><a class="navItem" href="#projects">Projects</a></li>
-					<li><a class="navItem" href="/resume.pdf" download>Resume</a></li>
+					<li><a class="navItem" href="#resume" download>Resume</a></li>
 					<li><a class="navItem" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<main class=>
+	<ul class="sidenav" id="mobile-nav">
+	    <li><a class="navItem activeNav mobile-nav-item" href="#about">About</a></li>
+		<li><a class="navItem mobile-nav-item" href="#projects">Projects</a></li>
+		<li><a class="navItem mobile-nav-item" href="/resume.pdf" download>Resume</a></li>
+		<li><a class="navItem mobile-nav-item" href="#contact">Contact</a></li>
+	</ul>
+	<main>
 		<div id="hello" class="row section parallax-window" data-parallax="scroll" data-image-src="img/pretty-clouds.jpg">
 			<h1>Hi, I'm Brett.</h1>
 			<!-- comment to allow collapse -->
 		</div>
-		<div id="about" class="section">
+		<div id="about" class="section scrollspy">
 			<div class="row section-header">
 				<h2>About</h2>
 				<hr />
 			</div>
 			<div class="row center-align container">
-				<img src="img/prof_pic.jpg">
-				<p>I’m a full stack developer with a passion for intuitive design and scalable implementation. Currently working as a Product Technology Manager specializing in software workflow improvement, I bring a strong user focus and a love of simplicity to development.</p>
+				<img class="col s12 m6" src="img/prof_pic.jpg">
+				<p class="col s12 m6">I’m a full stack developer with a passion for intuitive design and scalable implementation. Currently working as a Product Technology Manager specializing in software workflow improvement, I bring a strong user focus and a love of simplicity to development.</p>
 			</div>
 		</div>
 		<div id="skills" class="row section">
-			<img src="img/skills-icons1.png">
-			<img src="img/skills-icons2.png">
+			<img class="col s12 m6" src="img/skills-icons1.png">
+			<img class="col s12 m6" src="img/skills-icons2.png">
 		</div>
-		<div id="projects" class="section container">
+		<div id="projects" class="section container scrollspy">
 			<div class="row section-header">
 				<h2>Projects</h2>
 				<hr>
 			</div>
 			<div class="project row">
 				<div class="col s12 m7">
+					<h4 class="hide-on-large-only">Harmonize</h4>
 					<img src="img/harmonize.gif">
 				</div>
 				<div class="col s12 m5">
-					<h3>Harmonize</h3>
-					<p>A playlist generation app that leverages the Spotify API to access the listening history of a group of users and quickly find music that everyone in the group will enjoy.</p>
+					<h3 class="hide-on-med-and-down">Harmonize</h3>
+					<p><span class="bold">Summary:</span> A playlist generation app that leverages the Spotify API to access the listening history of a group of users and quickly find music that everyone in the group will enjoy.</p>
 					<p><span class="bold">Built with:</span> Node.js, Express, PostgreSQL, Materialize CSS, Sass, jQuery, and the Spotify API</p>
 					<p>
 						<a href="https://github.com/WithoutATowel/Harmonize" target="_blank">GitHub</a> | 
@@ -65,11 +73,12 @@
 			</div>
 			<div class="project row">
 				<div class="col s12 m7">
+					<h4 class="hide-on-large-only">Ryde</h4>
 					<img src="img/ryde.gif">
 				</div>
 				<div class="col s12 m5">
-					<h3>Ryde</h3>
-					<p>Tired of battling traffic or riding the bus? Ryde brings carpooling into the 21st century, making it easy to get to work, weekend destinations, and more. And if you know that you'll be driving, why not pick up some fellow travellers on the way to share the costs?</p>
+					<h3 class="hide-on-med-and-down">Ryde</h3>
+					<p><span class="bold">Summary:</span> Tired of battling traffic or riding the bus? Ryde brings carpooling into the 21st century, making it easy to get to work, weekend destinations, and more. And if you know that you'll be driving, why not pick up some fellow travellers on the way to share the costs?</p>
 					<p>Ryde is a group project built in collaboration with Sean Cesmat, Scott Rosehart, and Brant Porter.
 					<p><span class="bold">Built with:</span> React, Materialize CSS, Node.js, Express, BCrypt, Passport, Session, MongoDB and Mongoose</p>
 					<p>
@@ -80,11 +89,12 @@
 			</div>
 			<div class="project row">
 				<div class="col s12 m7">
+					<h4 class="hide-on-large-only">Pokemon Clientside</h4>
 					<img src="img/pokemon.gif">
 				</div>
 				<div class="col s12 m5">
-					<h3>Pokemon Clientside</h3>
-					<p>Pokemon Clientside is a proof of concept that the original Pokemon games could be rebuilt today using only standard browser functionality. Receive a starting Pokemon from Professor Oak, train your Pokemon to higher levels, and defeat the Final Four!</p>
+					<h3 class="hide-on-med-and-down">Pokemon Clientside</h3>
+					<p><span class="bold">Summary:</span> Pokemon Clientside is a proof of concept that the original Pokemon games could be rebuilt today using only standard browser functionality. Receive a starting Pokemon from Professor Oak, train your Pokemon to higher levels, and defeat the Final Four!</p>
 					<p><span class="bold">Built with:</span> HTML, CSS3, Sass, JavaScript, JSON, jQuery, jQuery UI, Python</p>
 					<p>
 						<a href="https://github.com/WithoutATowel/Pokemon-Clientside" target="_blank">GitHub</a> | 
@@ -94,11 +104,12 @@
 			</div>
 			<div class="project row">
 				<div class="col s12 m7">
+					<h4 class="hide-on-large-only">Project 4</h4>
 					<img src="img/placeholder.gif">
 				</div>
 				<div class="col s12 m5">
-					<h3>Project 4</h3>
-					<p>Project 4 is going to be totally awesome. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore, possimus alias atque sequi non placeat ad debitis incidunt! Sit quod ex, ut sapiente quaerat libero sed, optio hic doloribus.</p>
+					<h3 class="hide-on-med-and-down">Project 4</h3>
+					<p><span class="bold">Summary:</span> Project 4 is going to be totally awesome. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore, possimus alias atque sequi non placeat ad debitis incidunt! Sit quod ex, ut sapiente quaerat libero sed, optio hic doloribus.</p>
 					<p><span class="bold">Built with:</span> Django, Python, TensorFlow, jQuery, Materialize CSS, and HTML5 canvas.</p>
 					<p>
 						<a href="https://github.com/WithoutATowel" target="_blank">GitHub</a> | 
@@ -107,18 +118,18 @@
 				</div>
 			</div>
 		</div>
-		<div id="resume" class="row section">
+		<div id="resume" class="row section scrollspy">
 			<a href="/resume.pdf" download>
 				<button>Resume</button>
 			</a>
 		</div>
-		<div id="contact" class="section container">
+		<div id="contact" class="section container scrollspy">
 			<div class="row section-header">
 				<h2>Contact</h2>
 				<hr>
 			</div>
 			<div class=" row">
-				<div class="col s12 m4">
+				<div class="col s12 m4 hide-on-small-only">
 					<div>
 						<a href="mailto:brettspencr@gmail.com">
 							<p><i class="fas fa-envelope"></i>brettspencr@gmail.com</p>
@@ -174,7 +185,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 	<script src="js/parallax.min.js"></script>
-	<script src="js/smooth-scroll.js"></script>
+	<!-- <script src="js/smooth-scroll.js"></script> -->
 	<script src="js/main.js"></script>
 </body>
 </html>
